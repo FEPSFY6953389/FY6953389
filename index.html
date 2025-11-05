@@ -276,14 +276,13 @@ p.exl {
     button.addEventListener("click", changeColor);
   </script>
 </body>
-</html>
 
-<!DOCTYPE html>
+
 <head>
   <title>My Daily Activities</title>
 
   <script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
-</head>
+
 <body>
   <div id="chart_div"></div>
 </body>
@@ -293,7 +292,7 @@ p.exl {
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-        var data = google.visualisation.arrayToDataTable([
+        var data = google.visualization.arrayToDataTable([
             ['Task', 'Hours per Day'], 
             ['Work', 8], 
             ['Sleep', 8],
@@ -306,7 +305,37 @@ p.exl {
             title: 'My Daily Activities'
         };
 
-        var chart = new google.visualisation.PieChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
-  </script>
+</script>
+
+<script type="text/javascript">
+  function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'Age');
+    data.addColumn('number', 'Salary');
+
+    data.addRows([
+      [25, 40000],
+      [30, 50000],
+      [35, 60000],
+      [40, 75000],
+      [45, 80000],
+      [50, 90000],
+    ]);
+
+    var options = {
+      title: 'Age vs. Salary',
+      hAxis: {title: 'Age'}
+      vAxis: {title: 'Salary'}
+    };
+
+    var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+</html>
+
