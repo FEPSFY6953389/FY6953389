@@ -324,7 +324,7 @@ p.exl {
     const Analysis_4_Count = displayWordCount("Analysis4_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + Analysis_1_Count + Analysis_2_Count + Analysis_3_Count + Analysis_4_Count + ConclusionCount + ReferenceListCount;
+    const totalWordCount = IntroductionCount + Analysis_1_Count + Analysis_2_Count + Analysis_3_Count + Analysis_4_Count + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
