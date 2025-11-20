@@ -149,7 +149,7 @@ p.exl {
 
   <p class="ex1">
   <pre>
-    Despite its advantages, the idea of adopting continuous manufacturing still faces certain challenges. Many pharmaceutical plants already have 
+    Despite its advantages, the idea of using continuous manufacturing still faces certain challenges. Many pharmaceutical plants already have 
     batch equipment fixed in place, so rebuilding a continuous manufacturing line can be expensive and time-consuming. Another barrier includes 
     regulatory uncertainties between health authorities. According to Lawrence De Belder, executive consultant at Pharmatech Associates, a USP 
     company, "Many health authorities are very supportive of CM (continuous manufacturing), but many do not have much experience, and their 
@@ -320,10 +320,16 @@ p.exl {
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AbstractCount = displayWordCount("Abstract");
+    const IntroductionCount = displayWordCount("Introduction");
+    const Analysis_1_Count = displayWordCount("Difference Between Batch and Continous Manufacturing");
+    const Analysis_2_Count = displayWordCount("Why Continuous Manufacturing is Considered More Sustainable");
+    const Analysis_3_Count = displayWordCount("Challenges of Adopting Continuous Manufacturing");
+    const Analysis_4_Count = displayWordCount("A Chemical Engineer's Perspective");
+    const ConclusionCount = displayWordCount("Conclusion");
+    const ReferenceListCount = displayWordCount("Reference List)";
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = AbstractCount + IntroductionCount + Analysis_1_Count + Analysis_2_Count + Analysis_3_Count + Analysis_4_Count + ConclusionCount + ReferenceListCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
