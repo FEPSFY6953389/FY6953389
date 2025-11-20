@@ -81,7 +81,7 @@ p.exl {
   <h3 id="Abstract">Abstract</h3>
 
   <p class="ex1">
-  <pre id="Abstract_InText">
+  <pre>
     Pharmaceutical manufacturing has traditionally relied on batch production, where drugs are made in a series of sequential steps. While
     this method is effective, it often leads to high energy usage and excessive chemical waste, making it less sustainable and efficient. 
     This article aims to look at the shift towards continuous manufacturing, comparing it with batch processes to explore its potential for 
@@ -193,7 +193,7 @@ p.exl {
   <h3 id="Reference List">Reference List</h3>
 
   <p>
-    <pre id="ReferenceList_InText">
+    <pre>
       Altabrisa Group Limited, LLC (2024) Understanding What is Batch in Pharmaceutical Industry, Pharma & Biotech GMP Consulting | Altabrisa Group. 
       Available at: <a href="https://altabrisagroup.com/understanding-what-is-batch-in-pharmaceutical-industry/">https://altabrisagroup.com/understanding-what-is-batch-in-pharmaceutical-industry/</a> (Accessed: 29 October 2025).
 
@@ -317,14 +317,12 @@ p.exl {
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
     const Analysis_1_Count = displayWordCount("Analysis1_InText");
     const Analysis_2_Count = displayWordCount("Analysis2_InText");
     const Analysis_3_Count = displayWordCount("Analysis3_InText");
     const Analysis_4_Count = displayWordCount("Analysis4_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
-    const ReferenceListCount = displayWordCount("ReferenceList_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = AbstractCount + IntroductionCount + Analysis_1_Count + Analysis_2_Count + Analysis_3_Count + Analysis_4_Count + ConclusionCount + ReferenceListCount;
     // Display the total word count
