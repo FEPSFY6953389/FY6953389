@@ -99,7 +99,7 @@ p.exl {
   <h3 id="Introduction">Introduction</h3>
 
   <p class="ex1">
-  <pre>
+  <pre id="Introduction_InText">
     For years, batch manufacturing (Altabrisa Group Limited, LLC, 2024) has been strongly relied on by the pharmaceutical industry, producing 
     drugs in a step by step procedure. While batch manufacturing has been carried out for its advantages of equipment flexibility and being 
     well-established, this technique has led to significant chemical waste and low operational performance, which resulted in a shortage of 
@@ -114,7 +114,7 @@ p.exl {
   <h3 id="Difference Between Batch and Continuous Manufacturing">Difference Between Batch and Continuous Manufacturing</h3>
 
   <p class="ex1">
-  <pre>
+  <pre id="Analysis1_InText">
     In traditional batch manufacturing, drugs are produced with individual steps and pauses between them. Each batch must be set up, processed, 
     and then cleaned down before processing the next batch, which makes the overall process time-consuming and energy-intensive. Minor variations 
     during production can also lead to inconsistent quality, sometimes needing the entire batch to be discarded (Lee et al., 2015). Additionally, 
@@ -130,7 +130,7 @@ p.exl {
   <h3 id="Why Continuous Manufacturing is Considered More Sustainable">Why Continuous Manufacturing is Considered More Sustainable</h3>
 
   <p class="ex1">
-  <pre>
+  <pre id="Analysis2_InText">
     According to UK CPI, "when compared with the automotive sector, greenhouse-gas emissions from the pharmaceutical industry are 55% higher per 
     dollar of revenue - 48.55 tonnes of CO2 equivalent per million dollars in pharma, compared to 31.4 tonnes in automotive." 
     (Berry, 2023; Belkhir, 2019). This statistic emphasises how much more carbon-intensive the pharma industry is relative to other sectors, 
@@ -148,7 +148,7 @@ p.exl {
   <h3 id="Challenges of Adopting Continuous Manufacturing">Challenges of Adopting Continuous Manufacturing</h3>
 
   <p class="ex1">
-  <pre>
+  <pre id="Analysis3_InText">
     Despite its advantages, the idea of using continuous manufacturing still faces certain challenges. Many pharmaceutical plants already have 
     batch equipment fixed in place, so rebuilding a continuous manufacturing line can be expensive and time-consuming. Another barrier includes 
     regulatory uncertainties between health authorities. According to Lawrence De Belder, executive consultant at Pharmatech Associates, a USP 
@@ -160,7 +160,7 @@ p.exl {
   <h3 id="A Chemical Engineer's Perspective">A Chemical Engineer's Perspective</h3>
 
   <p class="ex1">
-  <pre>
+  <pre id="Analysis4_InText">
     Chemical Engineers play a crucial role in the development and optimisation of continuous manufacturing systems. Their expertise in reaction 
     engineering and process control ensures that equipment operates efficiently, meeting the growing demands of pharma production 
     (UPES Editorial Team, 2025). This would then involve amplifying chemical reactions to suit a larger-scale production, determining which 
@@ -187,7 +187,7 @@ p.exl {
   <h3 id="Conclusion">Conclusion</h3>
 
   <p class="ex1">
-  <pre>
+  <pre id="Conclusion_InText">
     The comparison between batch manufacturing and continuous manufacturing is clear: continuous processes are more efficient and sustainable. By 
     minimising waste generation and conserving energy, continuous manufacturing represents a more efficient and greener way to produce a continuous 
     supply of high-quality drugs (Lee et al., 2015). Thus, adopting this method enables the pharmaceutical industry to meet growing demand for 
@@ -197,7 +197,7 @@ p.exl {
   <h3 id="Reference List">Reference List</h3>
 
   <p>
-    <pre>
+    <pre id="ReferenceList_InText">
       Altabrisa Group Limited, LLC (2024) Understanding What is Batch in Pharmaceutical Industry, Pharma & Biotech GMP Consulting | Altabrisa Group. 
       Available at: <a href="https://altabrisagroup.com/understanding-what-is-batch-in-pharmaceutical-industry/">https://altabrisagroup.com/understanding-what-is-batch-in-pharmaceutical-industry/</a> (Accessed: 29 October 2025).
 
@@ -321,13 +321,13 @@ p.exl {
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const AbstractCount = displayWordCount("Abstract_InText");
-    const IntroductionCount = displayWordCount("Introduction");
-    const Analysis_1_Count = displayWordCount("Difference Between Batch and Continous Manufacturing");
-    const Analysis_2_Count = displayWordCount("Why Continuous Manufacturing is Considered More Sustainable");
-    const Analysis_3_Count = displayWordCount("Challenges of Adopting Continuous Manufacturing");
-    const Analysis_4_Count = displayWordCount("A Chemical Engineer's Perspective");
-    const ConclusionCount = displayWordCount("Conclusion");
-    const ReferenceListCount = displayWordCount("Reference List)";
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const Analysis_1_Count = displayWordCount("Analysis1_InText");
+    const Analysis_2_Count = displayWordCount("Analysis2_InText");
+    const Analysis_3_Count = displayWordCount("Analysis3_InText");
+    const Analysis_4_Count = displayWordCount("Analysis4_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
+    const ReferenceListCount = displayWordCount("ReferenceList_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = AbstractCount + IntroductionCount + Analysis_1_Count + Analysis_2_Count + Analysis_3_Count + Analysis_4_Count + ConclusionCount + ReferenceListCount;
     // Display the total word count
